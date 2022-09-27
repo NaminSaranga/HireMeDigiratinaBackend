@@ -35,7 +35,7 @@ public class EmployeeController {
 		return employeeRepository.findAll();
 	}	
 	
-	// create employee
+	// create digiratina employee
 	
 	@PostMapping("/employees")
 	public EmployeeDigiratina createEmployee(@RequestBody EmployeeDigiratina employeeDigiratina) {
@@ -50,7 +50,7 @@ public class EmployeeController {
 		 return ResponseEntity.ok(employeeDigiratina); 
 	}
 	
-	// update employee
+	// update digiratina employee
 	
 	@PutMapping("/employees/{id}")
 	public ResponseEntity<EmployeeDigiratina> updateEmployee(@PathVariable Long id, @RequestBody EmployeeDigiratina employeeDetails){
@@ -66,7 +66,7 @@ public class EmployeeController {
 		return ResponseEntity.ok(updatedEmployee);
 	}
 	
-	// delete employee
+	// delete digiratina employee
 	
 	@DeleteMapping("/employees/{id}")
 	public ResponseEntity<Map<String, Boolean>> deleteEmployee(@PathVariable Long id){
